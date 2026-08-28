@@ -6,6 +6,7 @@ import net.diligentelzee.create_fillers.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
@@ -296,6 +297,59 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 ModBlocks.HYPERDENSE_GRANITE_REDSTONE_ORE.get(),
                 ModBlocks.HYPERDENSE_TUFF_REDSTONE_ORE.get(),
                 ModBlocks.HYPERDENSE_BLACKSTONE_REDSTONE_ORE.get()
+        );
+        tag(ModTags.Blocks.BACKUP_EOV_QUARTZ_ORES).add(
+                ModBlocks.HYPERDENSE_BLACKSTONE_QUARTZ_ORE.get(),
+                ModBlocks.HYPERDENSE_NETHER_QUARTZ_ORE.get(),
+                Blocks.NETHER_QUARTZ_ORE,
+                ModBlocks.BLACKSTONE_QUARTZ_ORE.get()
+        );
+        tag(ModTags.Blocks.BACKUP_EOV_ORES).add(
+                ModBlocks.ANDESITE_COAL_ORE.get(),
+                ModBlocks.ANDESITE_COPPER_ORE.get(),
+                ModBlocks.ANDESITE_DIAMOND_ORE.get(),
+                ModBlocks.ANDESITE_EMERALD_ORE.get(),
+                ModBlocks.ANDESITE_GOLD_ORE.get(),
+                ModBlocks.ANDESITE_IRON_ORE.get(),
+                ModBlocks.ANDESITE_LAPIS_ORE.get(),
+                ModBlocks.ANDESITE_REDSTONE_ORE.get(),
+
+                ModBlocks.BLACKSTONE_COAL_ORE.get(),
+                ModBlocks.BLACKSTONE_COPPER_ORE.get(),
+                ModBlocks.BLACKSTONE_DIAMOND_ORE.get(),
+                ModBlocks.BLACKSTONE_EMERALD_ORE.get(),
+                ModBlocks.BLACKSTONE_GOLD_ORE.get(),
+                ModBlocks.BLACKSTONE_IRON_ORE.get(),
+                ModBlocks.BLACKSTONE_LAPIS_ORE.get(),
+                ModBlocks.BLACKSTONE_REDSTONE_ORE.get(),
+                ModBlocks.BLACKSTONE_QUARTZ_ORE.get(),
+
+                ModBlocks.DIORITE_COAL_ORE.get(),
+                ModBlocks.DIORITE_COPPER_ORE.get(),
+                ModBlocks.DIORITE_DIAMOND_ORE.get(),
+                ModBlocks.DIORITE_EMERALD_ORE.get(),
+                ModBlocks.DIORITE_GOLD_ORE.get(),
+                ModBlocks.DIORITE_IRON_ORE.get(),
+                ModBlocks.DIORITE_LAPIS_ORE.get(),
+                ModBlocks.DIORITE_REDSTONE_ORE.get(),
+
+                ModBlocks.GRANITE_COAL_ORE.get(),
+                ModBlocks.GRANITE_COPPER_ORE.get(),
+                ModBlocks.GRANITE_DIAMOND_ORE.get(),
+                ModBlocks.GRANITE_EMERALD_ORE.get(),
+                ModBlocks.GRANITE_GOLD_ORE.get(),
+                ModBlocks.GRANITE_IRON_ORE.get(),
+                ModBlocks.GRANITE_LAPIS_ORE.get(),
+                ModBlocks.GRANITE_REDSTONE_ORE.get(),
+
+                ModBlocks.TUFF_COAL_ORE.get(),
+                ModBlocks.TUFF_COPPER_ORE.get(),
+                ModBlocks.TUFF_DIAMOND_ORE.get(),
+                ModBlocks.TUFF_EMERALD_ORE.get(),
+                ModBlocks.TUFF_GOLD_ORE.get(),
+                ModBlocks.TUFF_IRON_ORE.get(),
+                ModBlocks.TUFF_LAPIS_ORE.get(),
+                ModBlocks.TUFF_REDSTONE_ORE.get()
         );
     }
 }

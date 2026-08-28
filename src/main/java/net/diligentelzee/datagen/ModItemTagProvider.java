@@ -3,12 +3,12 @@ package net.diligentelzee.datagen;
 import net.diligentelzee.create_fillers.CreateFillers;
 import net.diligentelzee.create_fillers.block.ModBlocks;
 import net.diligentelzee.create_fillers.util.ModTags;
-import net.marmar.enhanced_ore_variety.data.tag.EOVTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -167,9 +167,58 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 ModBlocks.HYPERDENSE_TUFF_REDSTONE_ORE.get().asItem(),
                 ModBlocks.HYPERDENSE_BLACKSTONE_REDSTONE_ORE.get().asItem()
         );
-        tag(EOVTags.Items.QUARTZ_ORES).add(
+        tag(ModTags.Items.BACKUP_EOV_QUARTZ_ORES).add(
                 ModBlocks.HYPERDENSE_BLACKSTONE_QUARTZ_ORE.get().asItem(),
-                ModBlocks.HYPERDENSE_NETHER_QUARTZ_ORE.get().asItem()
+                ModBlocks.HYPERDENSE_NETHER_QUARTZ_ORE.get().asItem(),
+                Blocks.NETHER_QUARTZ_ORE.asItem(),
+                ModBlocks.BLACKSTONE_QUARTZ_ORE.get().asItem()
+        );
+        tag(ModTags.Items.BACKUP_EOV_ORE_ITEMS).add(
+                ModBlocks.ANDESITE_COAL_ORE.get().asItem(),
+                ModBlocks.ANDESITE_COPPER_ORE.get().asItem(),
+                ModBlocks.ANDESITE_DIAMOND_ORE.get().asItem(),
+                ModBlocks.ANDESITE_EMERALD_ORE.get().asItem(),
+                ModBlocks.ANDESITE_GOLD_ORE.get().asItem(),
+                ModBlocks.ANDESITE_IRON_ORE.get().asItem(),
+                ModBlocks.ANDESITE_LAPIS_ORE.get().asItem(),
+                ModBlocks.ANDESITE_REDSTONE_ORE.get().asItem(),
+
+                ModBlocks.BLACKSTONE_COAL_ORE.get().asItem(),
+                ModBlocks.BLACKSTONE_COPPER_ORE.get().asItem(),
+                ModBlocks.BLACKSTONE_DIAMOND_ORE.get().asItem(),
+                ModBlocks.BLACKSTONE_EMERALD_ORE.get().asItem(),
+                ModBlocks.BLACKSTONE_GOLD_ORE.get().asItem(),
+                ModBlocks.BLACKSTONE_IRON_ORE.get().asItem(),
+                ModBlocks.BLACKSTONE_LAPIS_ORE.get().asItem(),
+                ModBlocks.BLACKSTONE_REDSTONE_ORE.get().asItem(),
+                ModBlocks.BLACKSTONE_QUARTZ_ORE.get().asItem(),
+
+                ModBlocks.DIORITE_COAL_ORE.get().asItem(),
+                ModBlocks.DIORITE_COPPER_ORE.get().asItem(),
+                ModBlocks.DIORITE_DIAMOND_ORE.get().asItem(),
+                ModBlocks.DIORITE_EMERALD_ORE.get().asItem(),
+                ModBlocks.DIORITE_GOLD_ORE.get().asItem(),
+                ModBlocks.DIORITE_IRON_ORE.get().asItem(),
+                ModBlocks.DIORITE_LAPIS_ORE.get().asItem(),
+                ModBlocks.DIORITE_REDSTONE_ORE.get().asItem(),
+
+                ModBlocks.GRANITE_COAL_ORE.get().asItem(),
+                ModBlocks.GRANITE_COPPER_ORE.get().asItem(),
+                ModBlocks.GRANITE_DIAMOND_ORE.get().asItem(),
+                ModBlocks.GRANITE_EMERALD_ORE.get().asItem(),
+                ModBlocks.GRANITE_GOLD_ORE.get().asItem(),
+                ModBlocks.GRANITE_IRON_ORE.get().asItem(),
+                ModBlocks.GRANITE_LAPIS_ORE.get().asItem(),
+                ModBlocks.GRANITE_REDSTONE_ORE.get().asItem(),
+
+                ModBlocks.TUFF_COAL_ORE.get().asItem(),
+                ModBlocks.TUFF_COPPER_ORE.get().asItem(),
+                ModBlocks.TUFF_DIAMOND_ORE.get().asItem(),
+                ModBlocks.TUFF_EMERALD_ORE.get().asItem(),
+                ModBlocks.TUFF_GOLD_ORE.get().asItem(),
+                ModBlocks.TUFF_IRON_ORE.get().asItem(),
+                ModBlocks.TUFF_LAPIS_ORE.get().asItem(),
+                ModBlocks.TUFF_REDSTONE_ORE.get().asItem()
         );
     }
 }

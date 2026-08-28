@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 120,
+  "experience": 0.5,
+  "group": "gold_nugget",
+  "ingredient": "createfillers:blackstone_gold_ore",
+  "result": {
+    "count": 1,
+    "id": "minecraft:gold_nugget"
+  }
+}

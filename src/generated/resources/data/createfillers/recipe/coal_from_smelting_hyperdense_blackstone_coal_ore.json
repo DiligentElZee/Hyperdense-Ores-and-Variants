@@ -4,9 +4,7 @@
   "cookingtime": 250,
   "experience": 0.5,
   "group": "coal",
-  "ingredient": {
-    "item": "createfillers:hyperdense_blackstone_coal_ore"
-  },
+  "ingredient": "createfillers:hyperdense_blackstone_coal_ore",
   "result": {
     "count": 1,
     "id": "minecraft:coal"

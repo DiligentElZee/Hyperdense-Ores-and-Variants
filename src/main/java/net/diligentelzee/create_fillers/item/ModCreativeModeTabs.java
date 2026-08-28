@@ -88,6 +88,62 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.HYPERDENSE_NETHER_QUARTZ_ORE);
                         output.accept(ModBlocks.HYPERDENSE_BLACKSTONE_QUARTZ_ORE);
                     }).build());
+
+    public static final Supplier<CreativeModeTab> TEMP_EOV_TAB = CREATIVE_MODE_TAB.register("temp_eov_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ANDESITE_DIAMOND_ORE.get()))
+                    .title(Component.translatable("createivetab.temp_eov_tab.items"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.ANDESITE_COAL_ORE);
+                        output.accept(ModBlocks.DIORITE_COAL_ORE);
+                        output.accept(ModBlocks.GRANITE_COAL_ORE);
+                        output.accept(ModBlocks.TUFF_COAL_ORE);
+                        output.accept(ModBlocks.BLACKSTONE_COAL_ORE);
+                        
+                        output.accept(ModBlocks.ANDESITE_COPPER_ORE);
+                        output.accept(ModBlocks.DIORITE_COPPER_ORE);
+                        output.accept(ModBlocks.GRANITE_COPPER_ORE);
+                        output.accept(ModBlocks.TUFF_COPPER_ORE);
+                        output.accept(ModBlocks.BLACKSTONE_COPPER_ORE);
+
+                        output.accept(ModBlocks.ANDESITE_DIAMOND_ORE);
+                        output.accept(ModBlocks.DIORITE_DIAMOND_ORE);
+                        output.accept(ModBlocks.GRANITE_DIAMOND_ORE);
+                        output.accept(ModBlocks.TUFF_DIAMOND_ORE);
+                        output.accept(ModBlocks.BLACKSTONE_DIAMOND_ORE);
+
+                        output.accept(ModBlocks.ANDESITE_EMERALD_ORE);
+                        output.accept(ModBlocks.DIORITE_EMERALD_ORE);
+                        output.accept(ModBlocks.GRANITE_EMERALD_ORE);
+                        output.accept(ModBlocks.TUFF_EMERALD_ORE);
+                        output.accept(ModBlocks.BLACKSTONE_EMERALD_ORE);
+
+                        output.accept(ModBlocks.ANDESITE_GOLD_ORE);
+                        output.accept(ModBlocks.DIORITE_GOLD_ORE);
+                        output.accept(ModBlocks.GRANITE_GOLD_ORE);
+                        output.accept(ModBlocks.TUFF_GOLD_ORE);
+
+                        output.accept(ModBlocks.ANDESITE_IRON_ORE);
+                        output.accept(ModBlocks.DIORITE_IRON_ORE);
+                        output.accept(ModBlocks.GRANITE_IRON_ORE);
+                        output.accept(ModBlocks.TUFF_IRON_ORE);
+                        output.accept(ModBlocks.BLACKSTONE_IRON_ORE);
+
+                        output.accept(ModBlocks.ANDESITE_LAPIS_ORE);
+                        output.accept(ModBlocks.DIORITE_LAPIS_ORE);
+                        output.accept(ModBlocks.GRANITE_LAPIS_ORE);
+                        output.accept(ModBlocks.TUFF_LAPIS_ORE);
+                        output.accept(ModBlocks.BLACKSTONE_LAPIS_ORE);
+
+                        output.accept(ModBlocks.ANDESITE_REDSTONE_ORE);
+                        output.accept(ModBlocks.DIORITE_REDSTONE_ORE);
+                        output.accept(ModBlocks.GRANITE_REDSTONE_ORE);
+                        output.accept(ModBlocks.TUFF_REDSTONE_ORE);
+                        output.accept(ModBlocks.BLACKSTONE_REDSTONE_ORE);
+
+                        output.accept(ModBlocks.BLACKSTONE_GOLD_ORE);
+
+                        output.accept(ModBlocks.BLACKSTONE_QUARTZ_ORE);
+                    }).build());
     
     
     public static void register(IEventBus eventBus) {

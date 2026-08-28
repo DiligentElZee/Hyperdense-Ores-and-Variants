@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "createfillers:hyperdense_deepslate_iron_ore"
+              "name": "createfillers:hyperdense_deepslate_lapis_ore"
             },
             {
               "type": "minecraft:item",
@@ -35,8 +35,8 @@
                   "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "max": 15.0,
-                    "min": 5.0
+                    "max": 18.0,
+                    "min": 10.0
                   },
                   "function": "minecraft:set_count"
                 },
@@ -49,7 +49,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:raw_iron"
+              "name": "minecraft:lapis_lazuli"
             }
           ]
         }

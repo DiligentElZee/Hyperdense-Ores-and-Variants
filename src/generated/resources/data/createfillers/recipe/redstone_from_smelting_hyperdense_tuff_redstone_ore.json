@@ -4,9 +4,7 @@
   "cookingtime": 250,
   "experience": 0.5,
   "group": "redstone",
-  "ingredient": {
-    "item": "createfillers:hyperdense_tuff_redstone_ore"
-  },
+  "ingredient": "createfillers:hyperdense_tuff_redstone_ore",
   "result": {
     "count": 1,
     "id": "minecraft:redstone"

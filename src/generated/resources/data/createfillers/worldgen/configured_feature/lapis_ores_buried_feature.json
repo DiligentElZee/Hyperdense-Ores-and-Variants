@@ -9,8 +9,8 @@
           "Name": "minecraft:lapis_ore"
         },
         "target": {
-          "block": "minecraft:stone",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -18,8 +18,8 @@
           "Name": "createfillers:hyperdense_lapis_ore"
         },
         "target": {
-          "block": "minecraft:stone",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -27,8 +27,8 @@
           "Name": "createfillers:hyperdense_diorite_lapis_ore"
         },
         "target": {
-          "block": "minecraft:diorite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -36,8 +36,8 @@
           "Name": "createfillers:hyperdense_andesite_lapis_ore"
         },
         "target": {
-          "block": "minecraft:andesite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -45,8 +45,8 @@
           "Name": "createfillers:hyperdense_granite_lapis_ore"
         },
         "target": {
-          "block": "minecraft:granite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -54,8 +54,8 @@
           "Name": "createfillers:hyperdense_deepslate_lapis_ore"
         },
         "target": {
-          "block": "minecraft:deepslate",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       },
       {
@@ -63,8 +63,8 @@
           "Name": "createfillers:hyperdense_tuff_lapis_ore"
         },
         "target": {
-          "block": "minecraft:tuff",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       },
       {
@@ -78,29 +78,29 @@
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:diorite_lapis_ore"
+          "Name": "createfillers:diorite_lapis_ore"
         },
         "target": {
-          "block": "minecraft:diorite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:andesite_lapis_ore"
+          "Name": "createfillers:andesite_lapis_ore"
         },
         "target": {
-          "block": "minecraft:andesite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:granite_lapis_ore"
+          "Name": "createfillers:granite_lapis_ore"
         },
         "target": {
-          "block": "minecraft:granite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -108,22 +108,22 @@
           "Name": "minecraft:deepslate_lapis_ore"
         },
         "target": {
-          "block": "minecraft:deepslate",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:tuff_lapis_ore"
+          "Name": "createfillers:tuff_lapis_ore"
         },
         "target": {
-          "block": "minecraft:tuff",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:blackstone_lapis_ore"
+          "Name": "createfillers:blackstone_lapis_ore"
         },
         "target": {
           "block": "minecraft:blackstone",

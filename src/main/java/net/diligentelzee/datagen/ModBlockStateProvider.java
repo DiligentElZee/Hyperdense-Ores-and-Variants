@@ -82,6 +82,58 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.HYPERDENSE_NETHER_QUARTZ_ORE);
         blockWithItem(ModBlocks.HYPERDENSE_BLACKSTONE_QUARTZ_ORE);
+
+
+        blockWithItem(ModBlocks.ANDESITE_COAL_ORE);
+        blockWithItem(ModBlocks.DIORITE_COAL_ORE);
+        blockWithItem(ModBlocks.GRANITE_COAL_ORE);
+        blockWithItem(ModBlocks.TUFF_COAL_ORE);
+        blockWithItem(ModBlocks.BLACKSTONE_COAL_ORE);
+
+        blockWithItem(ModBlocks.ANDESITE_COPPER_ORE);
+        blockWithItem(ModBlocks.DIORITE_COPPER_ORE);
+        blockWithItem(ModBlocks.GRANITE_COPPER_ORE);
+        blockWithItem(ModBlocks.TUFF_COPPER_ORE);
+        blockWithItem(ModBlocks.BLACKSTONE_COPPER_ORE);
+
+        blockWithItem(ModBlocks.ANDESITE_DIAMOND_ORE);
+        blockWithItem(ModBlocks.DIORITE_DIAMOND_ORE);
+        blockWithItem(ModBlocks.GRANITE_DIAMOND_ORE);
+        blockWithItem(ModBlocks.TUFF_DIAMOND_ORE);
+        blockWithItem(ModBlocks.BLACKSTONE_DIAMOND_ORE);
+
+        blockWithItem(ModBlocks.ANDESITE_EMERALD_ORE);
+        blockWithItem(ModBlocks.DIORITE_EMERALD_ORE);
+        blockWithItem(ModBlocks.GRANITE_EMERALD_ORE);
+        blockWithItem(ModBlocks.TUFF_EMERALD_ORE);
+        blockWithItem(ModBlocks.BLACKSTONE_EMERALD_ORE);
+
+        blockWithItem(ModBlocks.ANDESITE_GOLD_ORE);
+        blockWithItem(ModBlocks.DIORITE_GOLD_ORE);
+        blockWithItem(ModBlocks.GRANITE_GOLD_ORE);
+        blockWithItem(ModBlocks.TUFF_GOLD_ORE);
+
+        blockWithItem(ModBlocks.ANDESITE_IRON_ORE);
+        blockWithItem(ModBlocks.DIORITE_IRON_ORE);
+        blockWithItem(ModBlocks.GRANITE_IRON_ORE);
+        blockWithItem(ModBlocks.TUFF_IRON_ORE);
+        blockWithItem(ModBlocks.BLACKSTONE_IRON_ORE);
+
+        blockWithItem(ModBlocks.ANDESITE_LAPIS_ORE);
+        blockWithItem(ModBlocks.DIORITE_LAPIS_ORE);
+        blockWithItem(ModBlocks.GRANITE_LAPIS_ORE);
+        blockWithItem(ModBlocks.TUFF_LAPIS_ORE);
+        blockWithItem(ModBlocks.BLACKSTONE_LAPIS_ORE);
+
+        blockWithItem(ModBlocks.ANDESITE_REDSTONE_ORE);
+        blockWithItem(ModBlocks.DIORITE_REDSTONE_ORE);
+        blockWithItem(ModBlocks.GRANITE_REDSTONE_ORE);
+        blockWithItem(ModBlocks.TUFF_REDSTONE_ORE);
+        blockWithItem(ModBlocks.BLACKSTONE_REDSTONE_ORE);
+
+        blockWithItem(ModBlocks.BLACKSTONE_GOLD_ORE);
+
+        blockWithItem(ModBlocks.BLACKSTONE_QUARTZ_ORE);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

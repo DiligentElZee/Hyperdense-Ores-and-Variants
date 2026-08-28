@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 60,
+  "experience": 0.6,
+  "group": "copper",
+  "ingredient": "createfillers:granite_copper_ore",
+  "result": {
+    "count": 1,
+    "id": "minecraft:copper_ingot"
+  }
+}

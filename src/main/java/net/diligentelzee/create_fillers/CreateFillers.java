@@ -54,6 +54,58 @@ public class CreateFillers {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.ANDESITE_COAL_ORE);
+            event.accept(ModBlocks.DIORITE_COAL_ORE);
+            event.accept(ModBlocks.GRANITE_COAL_ORE);
+            event.accept(ModBlocks.TUFF_COAL_ORE);
+            event.accept(ModBlocks.BLACKSTONE_COAL_ORE);
+
+            event.accept(ModBlocks.ANDESITE_COPPER_ORE);
+            event.accept(ModBlocks.DIORITE_COPPER_ORE);
+            event.accept(ModBlocks.GRANITE_COPPER_ORE);
+            event.accept(ModBlocks.TUFF_COPPER_ORE);
+            event.accept(ModBlocks.BLACKSTONE_COPPER_ORE);
+
+            event.accept(ModBlocks.ANDESITE_DIAMOND_ORE);
+            event.accept(ModBlocks.DIORITE_DIAMOND_ORE);
+            event.accept(ModBlocks.GRANITE_DIAMOND_ORE);
+            event.accept(ModBlocks.TUFF_DIAMOND_ORE);
+            event.accept(ModBlocks.BLACKSTONE_DIAMOND_ORE);
+
+            event.accept(ModBlocks.ANDESITE_EMERALD_ORE);
+            event.accept(ModBlocks.DIORITE_EMERALD_ORE);
+            event.accept(ModBlocks.GRANITE_EMERALD_ORE);
+            event.accept(ModBlocks.TUFF_EMERALD_ORE);
+            event.accept(ModBlocks.BLACKSTONE_EMERALD_ORE);
+
+            event.accept(ModBlocks.ANDESITE_GOLD_ORE);
+            event.accept(ModBlocks.DIORITE_GOLD_ORE);
+            event.accept(ModBlocks.GRANITE_GOLD_ORE);
+            event.accept(ModBlocks.TUFF_GOLD_ORE);
+
+            event.accept(ModBlocks.ANDESITE_IRON_ORE);
+            event.accept(ModBlocks.DIORITE_IRON_ORE);
+            event.accept(ModBlocks.GRANITE_IRON_ORE);
+            event.accept(ModBlocks.TUFF_IRON_ORE);
+            event.accept(ModBlocks.BLACKSTONE_IRON_ORE);
+
+            event.accept(ModBlocks.ANDESITE_LAPIS_ORE);
+            event.accept(ModBlocks.DIORITE_LAPIS_ORE);
+            event.accept(ModBlocks.GRANITE_LAPIS_ORE);
+            event.accept(ModBlocks.TUFF_LAPIS_ORE);
+            event.accept(ModBlocks.BLACKSTONE_LAPIS_ORE);
+
+            event.accept(ModBlocks.ANDESITE_REDSTONE_ORE);
+            event.accept(ModBlocks.DIORITE_REDSTONE_ORE);
+            event.accept(ModBlocks.GRANITE_REDSTONE_ORE);
+            event.accept(ModBlocks.TUFF_REDSTONE_ORE);
+            event.accept(ModBlocks.BLACKSTONE_REDSTONE_ORE);
+
+            event.accept(ModBlocks.BLACKSTONE_GOLD_ORE);
+
+            event.accept(ModBlocks.BLACKSTONE_QUARTZ_ORE);
+
+
             event.accept(ModBlocks.HYPERDENSE_COAL_ORE);
             event.accept(ModBlocks.HYPERDENSE_DEEPSLATE_COAL_ORE);
             event.accept(ModBlocks.HYPERDENSE_ANDESITE_COAL_ORE);

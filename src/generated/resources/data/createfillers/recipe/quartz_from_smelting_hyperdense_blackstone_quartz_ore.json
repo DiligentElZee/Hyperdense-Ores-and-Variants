@@ -4,9 +4,7 @@
   "cookingtime": 250,
   "experience": 0.5,
   "group": "quartz",
-  "ingredient": {
-    "item": "createfillers:hyperdense_blackstone_quartz_ore"
-  },
+  "ingredient": "createfillers:hyperdense_blackstone_quartz_ore",
   "result": {
     "count": 1,
     "id": "minecraft:quartz"

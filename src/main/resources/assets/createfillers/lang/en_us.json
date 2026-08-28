@@ -1,5 +1,6 @@
 {
   "createivetab.createfillers.items": "Create Fillers",
+  "createivetab.temp_eov_tab.items": "Temporary EOV Tab",
 
   "block.createfillers.hyperdense_coal_ore": "Hyperdense Coal Ore",
   "block.createfillers.hyperdense_deepslate_coal_ore": "Hyperdense Deepslate Coal Ore",
@@ -67,5 +68,65 @@
   "block.createfillers.hyperdense_blackstone_redstone_ore": "Hyperdense Blackstone Redstone Ore",
 
   "block.createfillers.hyperdense_nether_quartz_ore": "Hyperdense Quartz Ore",
-  "block.createfillers.hyperdense_blackstone_quartz_ore": "Hyperdense Blackstone Quartz Ore"
+  "block.createfillers.hyperdense_blackstone_quartz_ore": "Hyperdense Blackstone Quartz Ore",
+
+
+  "block.createfillers.deepslate_coal_ore": "Deepslate Coal Ore",
+  "block.createfillers.andesite_coal_ore": "Andesite Coal Ore",
+  "block.createfillers.diorite_coal_ore": "Diorite Coal Ore",
+  "block.createfillers.granite_coal_ore": "Granite Coal Ore",
+  "block.createfillers.tuff_coal_ore": "Tuff Coal Ore",
+  "block.createfillers.blackstone_coal_ore": "Blackstone Coal Ore",
+
+  "block.createfillers.deepslate_copper_ore": "Deepslate Copper Ore",
+  "block.createfillers.andesite_copper_ore": "Andesite Copper Ore",
+  "block.createfillers.diorite_copper_ore": "Diorite Copper Ore",
+  "block.createfillers.granite_copper_ore": "Granite Copper Ore",
+  "block.createfillers.tuff_copper_ore": "Tuff Copper Ore",
+  "block.createfillers.blackstone_copper_ore": "Blackstone Copper Ore",
+
+  "block.createfillers.deepslate_diamond_ore": "Deepslate Diamond Ore",
+  "block.createfillers.andesite_diamond_ore": "Andesite Diamond Ore",
+  "block.createfillers.diorite_diamond_ore": "Diorite Diamond Ore",
+  "block.createfillers.granite_diamond_ore": "Granite Diamond Ore",
+  "block.createfillers.tuff_diamond_ore": "Tuff Diamond Ore",
+  "block.createfillers.blackstone_diamond_ore": "Blackstone Diamond Ore",
+
+  "block.createfillers.deepslate_emerald_ore": "Deepslate Emerald Ore",
+  "block.createfillers.andesite_emerald_ore": "Andesite Emerald Ore",
+  "block.createfillers.diorite_emerald_ore": "Diorite Emerald Ore",
+  "block.createfillers.granite_emerald_ore": "Granite Emerald Ore",
+  "block.createfillers.tuff_emerald_ore": "Tuff Emerald Ore",
+  "block.createfillers.blackstone_emerald_ore": "Blackstone Emerald Ore",
+
+  "block.createfillers.deepslate_gold_ore": "Deepslate Gold Ore",
+  "block.createfillers.andesite_gold_ore": "Andesite Gold Ore",
+  "block.createfillers.diorite_gold_ore": "Diorite Gold Ore",
+  "block.createfillers.granite_gold_ore": "Granite Gold Ore",
+  "block.createfillers.tuff_gold_ore": "Tuff Gold Ore",
+  "block.createfillers.blackstone_gold_ore": "Blackstone Gold Ore",
+  "block.createfillers.nether_gold_ore": "Nether Gold Ore",
+
+  "block.createfillers.deepslate_iron_ore": "Deepslate Iron Ore",
+  "block.createfillers.andesite_iron_ore": "Andesite Iron Ore",
+  "block.createfillers.diorite_iron_ore": "Diorite Iron Ore",
+  "block.createfillers.granite_iron_ore": "Granite Iron Ore",
+  "block.createfillers.tuff_iron_ore": "Tuff Iron Ore",
+  "block.createfillers.blackstone_iron_ore": "Blackstone Iron Ore",
+
+  "block.createfillers.deepslate_lapis_ore": "Deepslate Lapis Ore",
+  "block.createfillers.andesite_lapis_ore": "Andesite Lapis Ore",
+  "block.createfillers.diorite_lapis_ore": "Diorite Lapis Ore",
+  "block.createfillers.granite_lapis_ore": "Granite Lapis Ore",
+  "block.createfillers.tuff_lapis_ore": "Tuff Lapis Ore",
+  "block.createfillers.blackstone_lapis_ore": "Blackstone Lapis Ore",
+
+  "block.createfillers.deepslate_redstone_ore": "Deepslate Redstone Ore",
+  "block.createfillers.andesite_redstone_ore": "Andesite Redstone Ore",
+  "block.createfillers.diorite_redstone_ore": "Diorite Redstone Ore",
+  "block.createfillers.granite_redstone_ore": "Granite Redstone Ore",
+  "block.createfillers.tuff_redstone_ore": "Tuff Redstone Ore",
+  "block.createfillers.blackstone_redstone_ore": "Blackstone Redstone Ore",
+
+  "block.createfillers.blackstone_quartz_ore": "Blackstone Quartz Ore"
 }

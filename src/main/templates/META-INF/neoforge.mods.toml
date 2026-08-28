@@ -47,7 +47,9 @@ authors="DiligentElZee"
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 A Mod that adds a few features that other mods suck at.
-Extends "Mar Mar's Enhanced Ore Variety" mod by also adding 'Hyperdense' versions of vanilla ores in other stone variants.
+Extends "Mar Mar`s Enhanced Ore Variety" mod by also adding `Hyperdense` versions of vanilla ores in other stone variants.
+
+[[ THIS VERSION DOES NOT INCLUDE "Mar Mar`s Enhanced Ore Variety", BECAUSE A 1.21.3 VERSION DOES NOT EXIST. THEREFORE THE `EOV` BLOCKS HAVE BEEN MADE FROM SCRATCH. ]]
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
@@ -89,12 +91,13 @@ Extends "Mar Mar's Enhanced Ore Variety" mod by also adding 'Hyperdense' version
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.${mod_id}]]
-    modId="enhanced_ore_variety"
-    type="required"
-    versionRange="[1.21.1,)"
-    ordering="AFTER"
-    side="BOTH"
+# =>!! There's no EOV for 1.21.3 !!<=
+# [[dependencies.${mod_id}]]
+#     modId="enhanced_ore_variety"
+#     type="required"
+#     versionRange="[1.21.1,)"
+#     ordering="AFTER"
+#     side="BOTH"
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares
 # that your mod requires GL version 3.2 or higher. Other features will be added. They are side aware so declaring this won't
 # stop your mod loading on the server for example.

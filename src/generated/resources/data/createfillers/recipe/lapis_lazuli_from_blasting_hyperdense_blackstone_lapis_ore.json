@@ -4,9 +4,7 @@
   "cookingtime": 125,
   "experience": 1.2,
   "group": "lapis",
-  "ingredient": {
-    "item": "createfillers:hyperdense_blackstone_lapis_ore"
-  },
+  "ingredient": "createfillers:hyperdense_blackstone_lapis_ore",
   "result": {
     "count": 1,
     "id": "minecraft:lapis_lazuli"

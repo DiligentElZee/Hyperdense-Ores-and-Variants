@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 120,
+  "experience": 0.5,
+  "group": "iron",
+  "ingredient": "createfillers:andesite_iron_ore",
+  "result": {
+    "count": 1,
+    "id": "minecraft:iron_ingot"
+  }
+}

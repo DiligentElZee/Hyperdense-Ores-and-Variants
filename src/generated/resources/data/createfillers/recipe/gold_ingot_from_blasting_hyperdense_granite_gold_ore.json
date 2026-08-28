@@ -4,9 +4,7 @@
   "cookingtime": 125,
   "experience": 0.6,
   "group": "gold",
-  "ingredient": {
-    "item": "createfillers:hyperdense_granite_gold_ore"
-  },
+  "ingredient": "createfillers:hyperdense_granite_gold_ore",
   "result": {
     "count": 1,
     "id": "minecraft:gold_ingot"

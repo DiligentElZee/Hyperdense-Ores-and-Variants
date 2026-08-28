@@ -9,8 +9,8 @@
           "Name": "minecraft:coal_ore"
         },
         "target": {
-          "block": "minecraft:stone",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -18,17 +18,17 @@
           "Name": "createfillers:hyperdense_coal_ore"
         },
         "target": {
-          "block": "minecraft:stone",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
         "state": {
-          "Name": "createfillers:hyperdense_diorite_coal_ore"
+          "Name": "createfillers:andesite_coal_ore"
         },
         "target": {
-          "block": "minecraft:diorite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -36,34 +36,16 @@
           "Name": "createfillers:hyperdense_andesite_coal_ore"
         },
         "target": {
-          "block": "minecraft:andesite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
         "state": {
-          "Name": "createfillers:hyperdense_granite_coal_ore"
+          "Name": "createfillers:blackstone_coal_ore"
         },
         "target": {
-          "block": "minecraft:granite",
-          "predicate_type": "minecraft:block_match"
-        }
-      },
-      {
-        "state": {
-          "Name": "createfillers:hyperdense_deepslate_coal_ore"
-        },
-        "target": {
-          "block": "minecraft:deepslate",
-          "predicate_type": "minecraft:block_match"
-        }
-      },
-      {
-        "state": {
-          "Name": "createfillers:hyperdense_tuff_coal_ore"
-        },
-        "target": {
-          "block": "minecraft:tuff",
+          "block": "minecraft:blackstone",
           "predicate_type": "minecraft:block_match"
         }
       },
@@ -78,56 +60,74 @@
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:diorite_coal_ore"
-        },
-        "target": {
-          "block": "minecraft:diorite",
-          "predicate_type": "minecraft:block_match"
-        }
-      },
-      {
-        "state": {
-          "Name": "enhanced_ore_variety:andesite_coal_ore"
-        },
-        "target": {
-          "block": "minecraft:andesite",
-          "predicate_type": "minecraft:block_match"
-        }
-      },
-      {
-        "state": {
-          "Name": "enhanced_ore_variety:granite_coal_ore"
-        },
-        "target": {
-          "block": "minecraft:granite",
-          "predicate_type": "minecraft:block_match"
-        }
-      },
-      {
-        "state": {
           "Name": "minecraft:deepslate_coal_ore"
         },
         "target": {
-          "block": "minecraft:deepslate",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:tuff_coal_ore"
+          "Name": "createfillers:hyperdense_deepslate_coal_ore"
         },
         "target": {
-          "block": "minecraft:tuff",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:blackstone_coal_ore"
+          "Name": "createfillers:diorite_coal_ore"
         },
         "target": {
-          "block": "minecraft:blackstone",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
+        }
+      },
+      {
+        "state": {
+          "Name": "createfillers:hyperdense_diorite_coal_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
+        }
+      },
+      {
+        "state": {
+          "Name": "createfillers:granite_coal_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
+        }
+      },
+      {
+        "state": {
+          "Name": "createfillers:hyperdense_granite_coal_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
+        }
+      },
+      {
+        "state": {
+          "Name": "createfillers:tuff_coal_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
+        }
+      },
+      {
+        "state": {
+          "Name": "createfillers:hyperdense_tuff_coal_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       }
     ]

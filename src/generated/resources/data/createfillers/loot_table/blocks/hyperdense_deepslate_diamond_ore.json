@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "createfillers:hyperdense_deepslate_diamond_ore"
+              "name": "createfillers:hyperdense_deepslate_emerald_ore"
             },
             {
               "type": "minecraft:item",
@@ -35,7 +35,7 @@
                   "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "max": 5.0,
+                    "max": 6.0,
                     "min": 3.0
                   },
                   "function": "minecraft:set_count"
@@ -49,7 +49,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:diamond"
+              "name": "minecraft:emerald"
             }
           ]
         }

@@ -4,9 +4,7 @@
   "cookingtime": 250,
   "experience": 0.5,
   "group": "diamond",
-  "ingredient": {
-    "item": "createfillers:hyperdense_granite_diamond_ore"
-  },
+  "ingredient": "createfillers:hyperdense_granite_diamond_ore",
   "result": {
     "count": 1,
     "id": "minecraft:diamond"

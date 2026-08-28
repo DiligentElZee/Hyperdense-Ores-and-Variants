@@ -2,7 +2,6 @@ package net.diligentelzee.worldgen;
 
 import net.diligentelzee.create_fillers.CreateFillers;
 import net.minecraft.core.Holder;
-import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
@@ -22,8 +21,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> UPPER_COAL_ORES_PLACED = registerKey("upper_coal_ores_placed");
     public static final ResourceKey<PlacedFeature> LOWER_COAL_ORES_PLACED = registerKey("lower_coal_ores_placed");
 
-    public static final ResourceKey<PlacedFeature> COPPER_ORES_PLACED = registerKey("copper_ores_placed");
-    public static final ResourceKey<PlacedFeature> LARGE_COPPER_ORES_PLACED = registerKey("large_copper_ores_placed");
+    public static final ResourceKey<PlacedFeature> COPPER_ORE_PLACED = registerKey("copper_ore_placed");
+    public static final ResourceKey<PlacedFeature> LARGE_COPPER_ORE_PLACED = registerKey("copper_large_ore_placed");
 
     public static final ResourceKey<PlacedFeature> UPPER_IRON_ORES_PLACED = registerKey("upper_iron_ores_placed");
     public static final ResourceKey<PlacedFeature> MIDDLE_IRON_ORES_PLACED = registerKey("middle_iron_ores_placed");
@@ -47,9 +46,10 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> DIAMOND_ORES_PLACED = registerKey("diamond_ores_placed");
     public static final ResourceKey<PlacedFeature> LARGE_DIAMOND_ORES_PLACED = registerKey("large_diamond_ores_placed");
     public static final ResourceKey<PlacedFeature> BURIED_DIAMOND_ORES_PLACED = registerKey("buried_diamond_ores_placed");
+    public static final ResourceKey<PlacedFeature> MEDIUM_DIAMOND_ORES_PLACED = registerKey("medium_diamond_ores_placed");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context){
-        HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
+        var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         //Coal
         register(context, UPPER_COAL_ORES_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.COAL_ORES_FEATURE),
@@ -60,10 +60,10 @@ public class ModPlacedFeatures {
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(0), VerticalAnchor.absolute(192))));
 
         //Copper
-        register(context, COPPER_ORES_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.COPPER_ORES_SMALL_FEATURE),
+        register(context, COPPER_ORE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.COPPER_ORE_SMALL_FEATURE),
                 ModOrePlacement.commonOrePlacement(16,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-16), VerticalAnchor.absolute(112))));
-        register(context, LARGE_COPPER_ORES_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.COPPER_ORES_LARGE_FEATURE),
+        register(context, LARGE_COPPER_ORE_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.COPPER_ORE_LARGE_FEATURE),
                 ModOrePlacement.commonOrePlacement(16,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-16), VerticalAnchor.absolute(86))));
 
@@ -125,6 +125,9 @@ public class ModPlacedFeatures {
                 ModOrePlacement.rareOrePlacement(9,
                         HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
         register(context, BURIED_DIAMOND_ORES_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.DIAMOND_ORES_BURIED_FEATURE),
+                ModOrePlacement.commonOrePlacement(4,
+                        HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
+        register(context, MEDIUM_DIAMOND_ORES_PLACED, configuredFeatures.getOrThrow(ModConfiguredFeatures.DIAMOND_ORES_MEDIUM_FEATURE),
                 ModOrePlacement.commonOrePlacement(4,
                         HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80))));
     }

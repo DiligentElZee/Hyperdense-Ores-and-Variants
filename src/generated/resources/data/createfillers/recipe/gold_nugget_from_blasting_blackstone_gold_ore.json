@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 60,
+  "experience": 0.6,
+  "group": "gold_nugget",
+  "ingredient": "createfillers:blackstone_gold_ore",
+  "result": {
+    "count": 1,
+    "id": "minecraft:gold_nugget"
+  }
+}

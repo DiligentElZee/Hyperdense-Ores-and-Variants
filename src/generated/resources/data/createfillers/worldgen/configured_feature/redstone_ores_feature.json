@@ -1,7 +1,7 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "discard_chance_on_air_exposure": 0.0,
+    "discard_chance_on_air_exposure": 0.01,
     "size": 8,
     "targets": [
       {
@@ -12,8 +12,8 @@
           }
         },
         "target": {
-          "block": "minecraft:stone",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -24,8 +24,8 @@
           }
         },
         "target": {
-          "block": "minecraft:stone",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -36,8 +36,8 @@
           }
         },
         "target": {
-          "block": "minecraft:diorite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -48,8 +48,8 @@
           }
         },
         "target": {
-          "block": "minecraft:andesite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -60,8 +60,8 @@
           }
         },
         "target": {
-          "block": "minecraft:granite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -72,8 +72,8 @@
           }
         },
         "target": {
-          "block": "minecraft:deepslate",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       },
       {
@@ -84,8 +84,8 @@
           }
         },
         "target": {
-          "block": "minecraft:tuff",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       },
       {
@@ -102,38 +102,38 @@
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:diorite_redstone_ore",
+          "Name": "createfillers:diorite_redstone_ore",
           "Properties": {
             "lit": "false"
           }
         },
         "target": {
-          "block": "minecraft:diorite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:andesite_redstone_ore",
+          "Name": "createfillers:andesite_redstone_ore",
           "Properties": {
             "lit": "false"
           }
         },
         "target": {
-          "block": "minecraft:andesite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:granite_redstone_ore",
+          "Name": "createfillers:granite_redstone_ore",
           "Properties": {
             "lit": "false"
           }
         },
         "target": {
-          "block": "minecraft:granite",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:stone_ore_replaceables"
         }
       },
       {
@@ -144,25 +144,25 @@
           }
         },
         "target": {
-          "block": "minecraft:deepslate",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:tuff_redstone_ore",
+          "Name": "createfillers:tuff_redstone_ore",
           "Properties": {
             "lit": "false"
           }
         },
         "target": {
-          "block": "minecraft:tuff",
-          "predicate_type": "minecraft:block_match"
+          "predicate_type": "minecraft:tag_match",
+          "tag": "minecraft:deepslate_ore_replaceables"
         }
       },
       {
         "state": {
-          "Name": "enhanced_ore_variety:blackstone_redstone_ore",
+          "Name": "createfillers:blackstone_redstone_ore",
           "Properties": {
             "lit": "false"
           }

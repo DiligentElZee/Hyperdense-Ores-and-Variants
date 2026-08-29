@@ -28,7 +28,7 @@ public class CreateFillers {
     public CreateFillers(IEventBus modEventBus, ModContainer modContainer) {
 
         LOGGER.info("=======================================");
-        LOGGER.info("      INITIALIZING CREATE FILLERS");
+        LOGGER.info("      INITIALIZING CREATE FILLERS      ");
         LOGGER.info("=======================================");
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -48,7 +48,7 @@ public class CreateFillers {
         LOGGER.info("Fluffy threat detected...");
         LOGGER.info("Happy Mining! :3");
         LOGGER.info("========================================");
-        LOGGER.info("       CREATE FILLERS INITIALIZED");
+        LOGGER.info("       CREATE FILLERS INITIALIZED       ");
         LOGGER.info("========================================");
     }
 

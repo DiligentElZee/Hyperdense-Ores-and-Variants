@@ -49,7 +49,7 @@ description='''
 A Mod that adds a few features that other mods suck at.
 Extends "Mar Mar`s Enhanced Ore Variety" mod by also adding `Hyperdense` versions of vanilla ores in other stone variants.
 
-[[ THIS VERSION DOES NOT INCLUDE "Mar Mar`s Enhanced Ore Variety", BECAUSE A 1.21.3 VERSION DOES NOT EXIST. THEREFORE THE `EOV` BLOCKS HAVE BEEN MADE FROM SCRATCH. ]]
+[[ THIS VERSION DOES NOT INCLUDE "Mar Mar`s Enhanced Ore Variety", BECAUSE A 1.21.4 VERSION DOES NOT EXIST. THEREFORE THE `EOV` BLOCKS HAVE BEEN MADE FROM SCRATCH. ]]
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.

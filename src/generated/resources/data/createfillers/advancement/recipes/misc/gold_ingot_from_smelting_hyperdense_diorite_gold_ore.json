@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hyperdense_diorite_gold_ore": {
+    "[DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_gold_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_deepslate_gold_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_andesite_gold_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_diorite_gold_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_granite_gold_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_tuff_gold_ore]}]": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_hyperdense_diorite_gold_ore"
+      "[DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_gold_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_deepslate_gold_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_andesite_gold_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_diorite_gold_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_granite_gold_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_tuff_gold_ore]}]"
     ]
   ],
   "rewards": {

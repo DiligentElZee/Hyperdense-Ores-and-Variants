@@ -1,14 +1,10 @@
 {
   "type": "minecraft:smelting",
   "category": "blocks",
-  "cookingtime": 250,
+  "cookingtime": 200,
   "experience": 0.5,
-  "group": "redstone",
-  "ingredient": {
-    "item": "createfillers:hyperdense_tuff_redstone_ore"
-  },
+  "ingredient": "createfillers:hyperdense_tuff_redstone_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:redstone"
   }
 }

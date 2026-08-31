@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hyperdense_blackstone_coal_ore": {
+    "[DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_deepslate_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_andesite_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_diorite_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_granite_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_tuff_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_blackstone_coal_ore]}]": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_hyperdense_blackstone_coal_ore"
+      "[DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_deepslate_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_andesite_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_diorite_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_granite_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_tuff_coal_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_blackstone_coal_ore]}]"
     ]
   ],
   "rewards": {

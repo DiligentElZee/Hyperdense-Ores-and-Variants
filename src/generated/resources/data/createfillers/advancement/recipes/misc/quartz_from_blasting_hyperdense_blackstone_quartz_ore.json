@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hyperdense_blackstone_quartz_ore": {
+    "[DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_nether_quartz_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_blackstone_quartz_ore]}]": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_hyperdense_blackstone_quartz_ore"
+      "[DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_nether_quartz_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_blackstone_quartz_ore]}]"
     ]
   ],
   "rewards": {

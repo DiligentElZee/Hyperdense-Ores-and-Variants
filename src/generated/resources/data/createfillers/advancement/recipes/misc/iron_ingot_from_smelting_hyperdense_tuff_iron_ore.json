@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hyperdense_tuff_iron_ore": {
+    "[DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_iron_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_deepslate_iron_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_andesite_iron_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_diorite_iron_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_granite_iron_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_tuff_iron_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_blackstone_iron_ore]}]": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_hyperdense_tuff_iron_ore"
+      "[DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_iron_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_deepslate_iron_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_andesite_iron_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_diorite_iron_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_granite_iron_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_tuff_iron_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_blackstone_iron_ore]}]"
     ]
   ],
   "rewards": {

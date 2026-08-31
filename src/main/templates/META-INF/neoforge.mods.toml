@@ -92,7 +92,7 @@ Extends "Mar Mar's Enhanced Ore Variety" mod by also adding 'Hyperdense' version
 [[dependencies.${mod_id}]]
     modId="enhanced_ore_variety"
     type="required"
-    versionRange="[1.21.1,)"
+    versionRange="[26.1,26.2)"
     ordering="AFTER"
     side="BOTH"
 # Features are specific properties of the game environment, that you may want to declare you require. This example declares

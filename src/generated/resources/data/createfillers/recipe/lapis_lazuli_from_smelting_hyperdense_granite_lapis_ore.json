@@ -1,14 +1,10 @@
 {
   "type": "minecraft:smelting",
-  "category": "misc",
-  "cookingtime": 250,
+  "category": "blocks",
+  "cookingtime": 200,
   "experience": 1.0,
-  "group": "lapis",
-  "ingredient": {
-    "item": "createfillers:hyperdense_granite_lapis_ore"
-  },
+  "ingredient": "createfillers:hyperdense_granite_lapis_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:lapis_lazuli"
   }
 }

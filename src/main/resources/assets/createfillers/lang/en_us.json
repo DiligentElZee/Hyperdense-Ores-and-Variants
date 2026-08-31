@@ -67,5 +67,14 @@
   "block.createfillers.hyperdense_blackstone_redstone_ore": "Hyperdense Blackstone Redstone Ore",
 
   "block.createfillers.hyperdense_nether_quartz_ore": "Hyperdense Quartz Ore",
-  "block.createfillers.hyperdense_blackstone_quartz_ore": "Hyperdense Blackstone Quartz Ore"
+  "block.createfillers.hyperdense_blackstone_quartz_ore": "Hyperdense Blackstone Quartz Ore",
+
+
+  "createfillers.configuration.title": "CreateFillers Configs",
+  "createfillers.configuration.section.createfillers.common.toml": "CreateFillers Configs",
+  "createfillers.configuration.section.createfillers.common.toml.title": "CreateFillers Configs",
+  "createfillers.configuration.items": "Item List",
+  "createfillers.configuration.logDirtBlock": "Log Dirt Block",
+  "createfillers.configuration.magicNumberIntroduction": "Magic Number Text",
+  "createfillers.configuration.magicNumber": "Magic Number"
 }

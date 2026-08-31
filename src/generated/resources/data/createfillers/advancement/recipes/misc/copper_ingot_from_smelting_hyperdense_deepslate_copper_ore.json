@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hyperdense_deepslate_copper_ore": {
+    "[DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_copper_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_deepslate_copper_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_andesite_copper_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_diorite_copper_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_granite_copper_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_tuff_copper_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_blackstone_copper_ore]}]": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_hyperdense_deepslate_copper_ore"
+      "[DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_copper_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_deepslate_copper_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_andesite_copper_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_diorite_copper_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_granite_copper_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_tuff_copper_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_blackstone_copper_ore]}]"
     ]
   ],
   "rewards": {

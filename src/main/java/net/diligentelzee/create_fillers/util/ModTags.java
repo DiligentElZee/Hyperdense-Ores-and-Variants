@@ -1,7 +1,7 @@
 package net.diligentelzee.create_fillers.util;
 
 import net.diligentelzee.create_fillers.CreateFillers;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -13,7 +13,7 @@ public class ModTags {
         public static final TagKey<Block> HYPERDENSE_ORES = createTag("hyperdense_ores");
 
         private static TagKey<Block> createTag(String name) {
-            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(CreateFillers.MOD_ID, name));
+            return BlockTags.create(Identifier.fromNamespaceAndPath(CreateFillers.MOD_ID, name));
         }
     }
 
@@ -21,7 +21,7 @@ public class ModTags {
         public static final TagKey<Item> HYPERDENSE_ORE_ITEMS = createTag("hyperdense_ore_items");
 
         private static TagKey<Item> createTag(String name) {
-            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(CreateFillers.MOD_ID, name));
+            return ItemTags.create(Identifier.fromNamespaceAndPath(CreateFillers.MOD_ID, name));
         }
     }
 }

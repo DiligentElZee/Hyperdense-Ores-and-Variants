@@ -1,14 +1,10 @@
 {
   "type": "minecraft:smelting",
-  "category": "misc",
-  "cookingtime": 250,
+  "category": "blocks",
+  "cookingtime": 200,
   "experience": 0.5,
-  "group": "diamond",
-  "ingredient": {
-    "item": "createfillers:hyperdense_diamond_ore"
-  },
+  "ingredient": "createfillers:hyperdense_diamond_ore",
   "result": {
-    "count": 1,
     "id": "minecraft:diamond"
   }
 }

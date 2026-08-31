@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_hyperdense_diorite_diamond_ore": {
+    "[DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_deepslate_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_andesite_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_diorite_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_granite_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_tuff_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_blackstone_diamond_ore]}]": {
       "conditions": {
         "items": [
           {
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_hyperdense_diorite_diamond_ore"
+      "[DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_deepslate_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_andesite_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_diorite_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_granite_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_tuff_diamond_ore]}, DeferredHolder{ResourceKey[minecraft:block / createfillers:hyperdense_blackstone_diamond_ore]}]"
     ]
   ],
   "rewards": {

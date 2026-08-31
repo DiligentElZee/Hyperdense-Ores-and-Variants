@@ -6,7 +6,7 @@ import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -131,7 +131,7 @@ public class ModPlacedFeatures {
 
 
     public static ResourceKey<PlacedFeature> registerKey(String name) {
-        return ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(CreateFillers.MOD_ID, name));
+        return ResourceKey.create(Registries.PLACED_FEATURE, Identifier.fromNamespaceAndPath(CreateFillers.MOD_ID, name));
     }
 
     private static void register (BootstrapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key,

@@ -17,12 +17,24 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends RecipeProvider {
-    public ModRecipeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries);
+
+    protected ModRecipeProvider(HolderLookup.Provider provider, RecipeOutput recipeOutput) {
+        super(provider, recipeOutput);
+    }
+
+    protected void smeltOres(List<ItemLike> pIngredients, ItemLike pResult, float pExperience){
+        for (ItemLike ingredient : pIngredients) {
+            SimpleCookingRecipeBuilder.smelting(Ingredient.of(ingredient), RecipeCategory.MISC, CookingBookCategory.BLOCKS, pResult, pExperience, 200)
+                    .unlockedBy(pIngredients.toString(), has(ingredient))
+                    .save(this.output, CreateFillers.MOD_ID + ":" + getItemName(pResult) + "_from_smelting_" + getItemName(ingredient));
+            SimpleCookingRecipeBuilder.blasting(Ingredient.of(ingredient), RecipeCategory.MISC, CookingBookCategory.BLOCKS, pResult, pExperience, 100)
+                    .unlockedBy(pIngredients.toString(), has(ingredient))
+                    .save(this.output, CreateFillers.MOD_ID + ":" + getItemName(pResult) + "_from_blasting_" + getItemName(ingredient));
+        }
     }
 
     @Override
-    protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
+    protected void buildRecipes() {
         List<ItemLike> COAL_SMELTABLES = List.of(
                 ModBlocks.HYPERDENSE_COAL_ORE,
                 ModBlocks.HYPERDENSE_DEEPSLATE_COAL_ORE,
@@ -32,7 +44,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 ModBlocks.HYPERDENSE_TUFF_COAL_ORE,
                 ModBlocks.HYPERDENSE_BLACKSTONE_COAL_ORE
         );
-        
+
         List<ItemLike> COPPER_SMELTABLES = List.of(
                 ModBlocks.HYPERDENSE_COPPER_ORE,
                 ModBlocks.HYPERDENSE_DEEPSLATE_COPPER_ORE,
@@ -42,7 +54,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 ModBlocks.HYPERDENSE_TUFF_COPPER_ORE,
                 ModBlocks.HYPERDENSE_BLACKSTONE_COPPER_ORE
         );
-        
+
         List<ItemLike> DIAMOND_SMELTABLES = List.of(
                 ModBlocks.HYPERDENSE_DIAMOND_ORE,
                 ModBlocks.HYPERDENSE_DEEPSLATE_DIAMOND_ORE,
@@ -52,7 +64,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 ModBlocks.HYPERDENSE_TUFF_DIAMOND_ORE,
                 ModBlocks.HYPERDENSE_BLACKSTONE_DIAMOND_ORE
         );
-        
+
         List<ItemLike> EMERALD_SMELTABLES = List.of(
                 ModBlocks.HYPERDENSE_EMERALD_ORE,
                 ModBlocks.HYPERDENSE_DEEPSLATE_EMERALD_ORE,
@@ -62,7 +74,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 ModBlocks.HYPERDENSE_TUFF_EMERALD_ORE,
                 ModBlocks.HYPERDENSE_BLACKSTONE_EMERALD_ORE
         );
-        
+
         List<ItemLike> GOLD_SMELTABLES = List.of(
                 ModBlocks.HYPERDENSE_GOLD_ORE,
                 ModBlocks.HYPERDENSE_DEEPSLATE_GOLD_ORE,
@@ -71,12 +83,12 @@ public class ModRecipeProvider extends RecipeProvider {
                 ModBlocks.HYPERDENSE_GRANITE_GOLD_ORE,
                 ModBlocks.HYPERDENSE_TUFF_GOLD_ORE
         );
-        
+
         List<ItemLike> NETHER_GOLD_SMELTABLE = List.of(
                 ModBlocks.HYPERDENSE_NETHER_GOLD_ORE,
                 ModBlocks.HYPERDENSE_BLACKSTONE_GOLD_ORE
         );
-        
+
         List<ItemLike> IRON_SMELTABLES = List.of(
                 ModBlocks.HYPERDENSE_IRON_ORE,
                 ModBlocks.HYPERDENSE_DEEPSLATE_IRON_ORE,
@@ -86,7 +98,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 ModBlocks.HYPERDENSE_TUFF_IRON_ORE,
                 ModBlocks.HYPERDENSE_BLACKSTONE_IRON_ORE
         );
-        
+
         List<ItemLike> LAPIS_SMELTABLES = List.of(
                 ModBlocks.HYPERDENSE_LAPIS_ORE,
                 ModBlocks.HYPERDENSE_DEEPSLATE_LAPIS_ORE,
@@ -96,7 +108,7 @@ public class ModRecipeProvider extends RecipeProvider {
                 ModBlocks.HYPERDENSE_TUFF_LAPIS_ORE,
                 ModBlocks.HYPERDENSE_BLACKSTONE_LAPIS_ORE
         );
-        
+
         List<ItemLike> REDSTONE_SMELTABLES = List.of(
                 ModBlocks.HYPERDENSE_REDSTONE_ORE,
                 ModBlocks.HYPERDENSE_DEEPSLATE_REDSTONE_ORE,
@@ -106,63 +118,47 @@ public class ModRecipeProvider extends RecipeProvider {
                 ModBlocks.HYPERDENSE_TUFF_REDSTONE_ORE,
                 ModBlocks.HYPERDENSE_BLACKSTONE_REDSTONE_ORE
         );
-        
+
         List<ItemLike> NETHER_QUARTZ_SMELTABLE = List.of(
                 ModBlocks.HYPERDENSE_NETHER_QUARTZ_ORE,
                 ModBlocks.HYPERDENSE_BLACKSTONE_QUARTZ_ORE
         );
 
-        oreSmelting(recipeOutput, COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.5f, 250, "coal");
-        oreBlasting(recipeOutput, COAL_SMELTABLES, RecipeCategory.MISC, Items.COAL, 0.6f, 125, "coal");
+        smeltOres(COAL_SMELTABLES, Items.COAL, 0.5f);
 
-        oreSmelting(recipeOutput, COPPER_SMELTABLES, RecipeCategory.MISC, Items.COPPER_INGOT, 0.5f, 250, "copper");
-        oreBlasting(recipeOutput, COPPER_SMELTABLES, RecipeCategory.MISC, Items.COPPER_INGOT, 0.6f, 125, "copper");
+        smeltOres(COPPER_SMELTABLES, Items.COPPER_INGOT, 0.5f);
 
-        oreSmelting(recipeOutput, DIAMOND_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND, 0.5f, 250, "diamond");
-        oreBlasting(recipeOutput, DIAMOND_SMELTABLES, RecipeCategory.MISC, Items.DIAMOND, 0.6f, 125, "diamond");
+        smeltOres(DIAMOND_SMELTABLES, Items.DIAMOND, 0.5f);
 
-        oreSmelting(recipeOutput, EMERALD_SMELTABLES, RecipeCategory.MISC, Items.EMERALD, 0.5f, 250, "emerald");
-        oreBlasting(recipeOutput, EMERALD_SMELTABLES, RecipeCategory.MISC, Items.EMERALD, 0.6f, 125, "emerald");
+        smeltOres(EMERALD_SMELTABLES, Items.EMERALD, 0.5f);
 
-        oreSmelting(recipeOutput, GOLD_SMELTABLES, RecipeCategory.MISC, Items.GOLD_INGOT, 0.5f, 250, "gold");
-        oreBlasting(recipeOutput, GOLD_SMELTABLES, RecipeCategory.MISC, Items.GOLD_INGOT, 0.6f, 125, "gold");
+        smeltOres(GOLD_SMELTABLES, Items.GOLD_INGOT, 0.5f);
 
-        oreSmelting(recipeOutput, IRON_SMELTABLES, RecipeCategory.MISC, Items.IRON_INGOT, 0.5f, 250, "iron");
-        oreBlasting(recipeOutput, IRON_SMELTABLES, RecipeCategory.MISC, Items.IRON_INGOT, 0.6f, 125, "iron");
+        smeltOres(IRON_SMELTABLES, Items.IRON_INGOT, 0.5f);
 
-        oreSmelting(recipeOutput, LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 1.0f, 250, "lapis");
-        oreBlasting(recipeOutput, LAPIS_SMELTABLES, RecipeCategory.MISC, Items.LAPIS_LAZULI, 1.2f, 125, "lapis");
+        smeltOres(LAPIS_SMELTABLES, Items.LAPIS_LAZULI, 1.0f);
 
-        oreSmelting(recipeOutput, REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.5f, 250, "redstone");
-        oreBlasting(recipeOutput, REDSTONE_SMELTABLES, RecipeCategory.MISC, Items.REDSTONE, 0.6f, 125, "redstone");
+        smeltOres(REDSTONE_SMELTABLES, Items.REDSTONE, 0.5f);
 
-        oreSmelting(recipeOutput, NETHER_GOLD_SMELTABLE, RecipeCategory.MISC, Items.GOLD_NUGGET, 0.5f, 250, "gold_nugget");
-        oreBlasting(recipeOutput, NETHER_GOLD_SMELTABLE, RecipeCategory.MISC, Items.GOLD_NUGGET, 0.6f, 125, "gold_nugget");
+        smeltOres(NETHER_GOLD_SMELTABLE, Items.GOLD_NUGGET, 0.5f);
 
-        oreSmelting(recipeOutput, NETHER_QUARTZ_SMELTABLE, RecipeCategory.MISC, Items.QUARTZ, 0.5f, 250, "quartz");
-        oreBlasting(recipeOutput, NETHER_QUARTZ_SMELTABLE, RecipeCategory.MISC, Items.QUARTZ, 0.6f, 125, "quartz");
+        smeltOres(NETHER_QUARTZ_SMELTABLE, Items.QUARTZ, 0.5f);
     }
 
-    protected static void oreSmelting(@NotNull RecipeOutput recipeOutput, List<ItemLike> pIngredients, @NotNull RecipeCategory pCategory, @NotNull ItemLike pResult,
-                                      float pExperience, int pCookingTIme, @NotNull String pGroup) {
-        oreCooking(recipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, pIngredients, pCategory, pResult,
-                pExperience, pCookingTIme, pGroup, "_from_smelting");
-    }
+    public static class Runner extends RecipeProvider.Runner {
 
-    protected static void oreBlasting(@NotNull RecipeOutput recipeOutput, List<ItemLike> pIngredients, @NotNull RecipeCategory pCategory, @NotNull ItemLike pResult,
-                                      float pExperience, int pCookingTime, @NotNull String pGroup) {
-        oreCooking(recipeOutput, RecipeSerializer.BLASTING_RECIPE, BlastingRecipe::new, pIngredients, pCategory, pResult,
-                pExperience, pCookingTime, pGroup, "_from_blasting");
-    }
+        public Runner(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> provider) {
+            super(packOutput, provider);
+        }
 
-    protected static <T extends AbstractCookingRecipe> void oreCooking(@NotNull RecipeOutput recipeOutput, RecipeSerializer<T> pCookingSerializer,
-                                                                       AbstractCookingRecipe.@NotNull Factory<T> factory,
-                                                                       List<ItemLike> pIngredients, @NotNull RecipeCategory pCategory,
-                                                                       @NotNull ItemLike pResult, float pExperience, int pCookingTime,
-                                                                       @NotNull String pGroup, String pRecipeName) {
-        for(ItemLike itemlike : pIngredients) {
-            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer, factory).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
-                    .save(recipeOutput, CreateFillers.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
+        @Override
+        protected @NotNull RecipeProvider createRecipeProvider(HolderLookup.@NotNull Provider provider, @NotNull RecipeOutput recipeOutput) {
+            return new ModRecipeProvider(provider, recipeOutput);
+        }
+
+        @Override
+        public @NotNull String getName() {
+            return "CreateFiller Recipes";
         }
     }
 }

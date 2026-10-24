@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "createfillers:block/hyperdense_deepslate_copper_ore"
-  }
-}

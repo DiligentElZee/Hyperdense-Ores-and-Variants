@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "[DeferredHolder{ResourceKey[minecraft:block / hoav:hyperdense_nether_quartz_ore]}, DeferredHolder{ResourceKey[minecraft:block / hoav:hyperdense_blackstone_quartz_ore]}]": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hoav:hyperdense_nether_quartz_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hoav:quartz_from_smelting_hyperdense_nether_quartz_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "[DeferredHolder{ResourceKey[minecraft:block / hoav:hyperdense_nether_quartz_ore]}, DeferredHolder{ResourceKey[minecraft:block / hoav:hyperdense_blackstone_quartz_ore]}]"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hoav:quartz_from_smelting_hyperdense_nether_quartz_ore"
+    ]
+  }
+}

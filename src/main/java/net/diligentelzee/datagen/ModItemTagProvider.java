@@ -1,8 +1,8 @@
 package net.diligentelzee.datagen;
 
-import net.diligentelzee.create_fillers.CreateFillers;
-import net.diligentelzee.create_fillers.block.ModBlocks;
-import net.diligentelzee.create_fillers.util.ModTags;
+import net.diligentelzee.hoav.HOaV;
+import net.diligentelzee.hoav.block.ModBlocks;
+import net.diligentelzee.hoav.util.ModTags;
 import net.marmar.enhanced_ore_variety.data.tag.EOVTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -14,7 +14,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModItemTagProvider extends ItemTagsProvider {
     public ModItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
-        super(output, lookupProvider, CreateFillers.MOD_ID);
+        super(output, lookupProvider, HOaV.MOD_ID);
     }
 
     @Override

@@ -1,7 +1,7 @@
 package net.diligentelzee.datagen;
 
-import net.diligentelzee.create_fillers.CreateFillers;
-import net.diligentelzee.create_fillers.block.ModBlocks;
+import net.diligentelzee.hoav.HOaV;
+import net.diligentelzee.hoav.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
@@ -26,10 +26,10 @@ public class ModRecipeProvider extends RecipeProvider {
         for (ItemLike ingredient : pIngredients) {
             SimpleCookingRecipeBuilder.smelting(Ingredient.of(ingredient), RecipeCategory.MISC, CookingBookCategory.BLOCKS, pResult, pExperience, 200)
                     .unlockedBy(pIngredients.toString(), has(ingredient))
-                    .save(this.output, CreateFillers.MOD_ID + ":" + getItemName(pResult) + "_from_smelting_" + getItemName(ingredient));
+                    .save(this.output, HOaV.MOD_ID + ":" + getItemName(pResult) + "_from_smelting_" + getItemName(ingredient));
             SimpleCookingRecipeBuilder.blasting(Ingredient.of(ingredient), RecipeCategory.MISC, CookingBookCategory.BLOCKS, pResult, pExperience, 100)
                     .unlockedBy(pIngredients.toString(), has(ingredient))
-                    .save(this.output, CreateFillers.MOD_ID + ":" + getItemName(pResult) + "_from_blasting_" + getItemName(ingredient));
+                    .save(this.output, HOaV.MOD_ID + ":" + getItemName(pResult) + "_from_blasting_" + getItemName(ingredient));
         }
     }
 

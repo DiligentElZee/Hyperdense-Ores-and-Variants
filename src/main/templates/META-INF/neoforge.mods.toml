@@ -42,7 +42,7 @@ logoFile="icon.png" #optional
 credits="GG David and Otto... Thank you to Mar Mar's Enhanced Ore Variety" #optional
 
 # The authors of the mod, displayed in the mod UI (optional)
-authors="DiligentElZee"
+authors="Diligent ElZee"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''

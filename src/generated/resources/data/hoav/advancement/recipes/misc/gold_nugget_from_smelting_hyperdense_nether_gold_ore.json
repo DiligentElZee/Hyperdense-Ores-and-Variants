@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "[DeferredHolder{ResourceKey[minecraft:block / hoav:hyperdense_nether_gold_ore]}, DeferredHolder{ResourceKey[minecraft:block / hoav:hyperdense_blackstone_gold_ore]}]": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hoav:hyperdense_nether_gold_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hoav:gold_nugget_from_smelting_hyperdense_nether_gold_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "[DeferredHolder{ResourceKey[minecraft:block / hoav:hyperdense_nether_gold_ore]}, DeferredHolder{ResourceKey[minecraft:block / hoav:hyperdense_blackstone_gold_ore]}]"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hoav:gold_nugget_from_smelting_hyperdense_nether_gold_ore"
+    ]
+  }
+}

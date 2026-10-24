@@ -1,8 +1,8 @@
 package net.diligentelzee.datagen;
 
-import net.diligentelzee.create_fillers.CreateFillers;
-import net.diligentelzee.create_fillers.block.ModBlocks;
-import net.diligentelzee.create_fillers.item.ModItems;
+import net.diligentelzee.hoav.HOaV;
+import net.diligentelzee.hoav.block.ModBlocks;
+import net.diligentelzee.hoav.item.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -17,7 +17,7 @@ import java.util.stream.Stream;
 public class ModModelProvider extends ModelProvider {
 
     public ModModelProvider(PackOutput output) {
-        super(output, CreateFillers.MOD_ID);
+        super(output, HOaV.MOD_ID);
     }
 
     @Override

@@ -1,6 +1,6 @@
 package net.diligentelzee.worldgen;
 
-import net.diligentelzee.create_fillers.CreateFillers;
+import net.diligentelzee.hoav.HOaV;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -426,6 +426,6 @@ public class ModBiomeModifiers {
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {
-        return ResourceKey.create(NeoForgeRegistries.Keys.BIOME_MODIFIERS, Identifier.fromNamespaceAndPath(CreateFillers.MOD_ID, name));
+        return ResourceKey.create(NeoForgeRegistries.Keys.BIOME_MODIFIERS, Identifier.fromNamespaceAndPath(HOaV.MOD_ID, name));
     }
 }

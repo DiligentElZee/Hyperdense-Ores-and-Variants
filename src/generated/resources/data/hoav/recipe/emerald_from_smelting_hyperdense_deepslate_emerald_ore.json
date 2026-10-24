@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.5,
+  "ingredient": "hoav:hyperdense_deepslate_emerald_ore",
+  "result": {
+    "id": "minecraft:emerald"
+  }
+}

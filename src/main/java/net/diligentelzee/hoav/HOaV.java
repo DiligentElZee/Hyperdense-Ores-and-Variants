@@ -28,7 +28,7 @@ public class HOaV {
     public HOaV(IEventBus modEventBus, ModContainer modContainer) {
 
         LOGGER.info("=======================================");
-        LOGGER.info("      INITIALIZING CREATE FILLERS");
+        LOGGER.info("   INITIALIZING H. ORES AND VARIANTS");
         LOGGER.info("=======================================");
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -48,7 +48,7 @@ public class HOaV {
         LOGGER.info("Fluffy threat detected...");
         LOGGER.info("Happy Mining! :3");
         LOGGER.info("========================================");
-        LOGGER.info("       CREATE FILLERS INITIALIZED");
+        LOGGER.info("    H. ORES AND VARIANTS INITIALIZED");
         LOGGER.info("========================================");
     }
 

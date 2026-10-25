@@ -1,6 +1,6 @@
 package net.diligentelzee.datagen;
 
-import net.diligentelzee.create_fillers.CreateFillers;
+import net.diligentelzee.hoav.HOaV;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
-@EventBusSubscriber(modid = CreateFillers.MOD_ID)
+@EventBusSubscriber(modid = HOaV.MOD_ID)
 public class DataGenerators {
     @SubscribeEvent
     public static void  gatherData(GatherDataEvent event) {

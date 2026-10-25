@@ -1,6 +1,6 @@
 package net.diligentelzee.worldgen;
 
-import net.diligentelzee.create_fillers.CreateFillers;
+import net.diligentelzee.hoav.HOaV;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
@@ -131,7 +131,7 @@ public class ModPlacedFeatures {
 
 
     public static ResourceKey<PlacedFeature> registerKey(String name) {
-        return ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(CreateFillers.MOD_ID, name));
+        return ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(HOaV.MOD_ID, name));
     }
 
     private static void register (BootstrapContext<PlacedFeature> context, ResourceKey<PlacedFeature> key,

@@ -1,11 +1,11 @@
 {
   "values": [
-    "createfillers:hyperdense_gold_ore",
-    "createfillers:hyperdense_deepslate_gold_ore",
-    "createfillers:hyperdense_andesite_gold_ore",
-    "createfillers:hyperdense_diorite_gold_ore",
-    "createfillers:hyperdense_granite_gold_ore",
-    "createfillers:hyperdense_tuff_gold_ore",
-    "createfillers:hyperdense_blackstone_gold_ore"
+    "hoav:hyperdense_gold_ore",
+    "hoav:hyperdense_deepslate_gold_ore",
+    "hoav:hyperdense_andesite_gold_ore",
+    "hoav:hyperdense_diorite_gold_ore",
+    "hoav:hyperdense_granite_gold_ore",
+    "hoav:hyperdense_tuff_gold_ore",
+    "hoav:hyperdense_blackstone_gold_ore"
   ]
 }

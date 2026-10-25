@@ -1,7 +1,7 @@
 package net.diligentelzee.datagen;
 
-import net.diligentelzee.create_fillers.CreateFillers;
-import net.diligentelzee.create_fillers.block.ModBlocks;
+import net.diligentelzee.hoav.HOaV;
+import net.diligentelzee.hoav.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
@@ -162,7 +162,7 @@ public class ModRecipeProvider extends RecipeProvider {
                                                                        @NotNull String pGroup, String pRecipeName) {
         for(ItemLike itemlike : pIngredients) {
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer, factory).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
-                    .save(recipeOutput, CreateFillers.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
+                    .save(recipeOutput, HOaV.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
         }
     }
 }

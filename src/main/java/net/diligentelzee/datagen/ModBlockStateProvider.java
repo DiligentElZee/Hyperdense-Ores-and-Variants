@@ -1,7 +1,7 @@
 package net.diligentelzee.datagen;
 
-import net.diligentelzee.create_fillers.CreateFillers;
-import net.diligentelzee.create_fillers.block.ModBlocks;
+import net.diligentelzee.hoav.HOaV;
+import net.diligentelzee.hoav.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -9,7 +9,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
-        super(output, CreateFillers.MOD_ID, exFileHelper);
+        super(output, HOaV.MOD_ID, exFileHelper);
     }
 
     @Override

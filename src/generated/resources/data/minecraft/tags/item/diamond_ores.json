@@ -1,11 +1,11 @@
 {
   "values": [
-    "createfillers:hyperdense_diamond_ore",
-    "createfillers:hyperdense_deepslate_diamond_ore",
-    "createfillers:hyperdense_andesite_diamond_ore",
-    "createfillers:hyperdense_diorite_diamond_ore",
-    "createfillers:hyperdense_granite_diamond_ore",
-    "createfillers:hyperdense_tuff_diamond_ore",
-    "createfillers:hyperdense_blackstone_diamond_ore"
+    "hoav:hyperdense_diamond_ore",
+    "hoav:hyperdense_deepslate_diamond_ore",
+    "hoav:hyperdense_andesite_diamond_ore",
+    "hoav:hyperdense_diorite_diamond_ore",
+    "hoav:hyperdense_granite_diamond_ore",
+    "hoav:hyperdense_tuff_diamond_ore",
+    "hoav:hyperdense_blackstone_diamond_ore"
   ]
 }

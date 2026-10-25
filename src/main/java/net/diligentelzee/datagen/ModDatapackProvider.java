@@ -1,6 +1,6 @@
 package net.diligentelzee.datagen;
 
-import net.diligentelzee.create_fillers.CreateFillers;
+import net.diligentelzee.hoav.HOaV;
 import net.diligentelzee.worldgen.ModBiomeModifiers;
 import net.diligentelzee.worldgen.ModConfiguredFeatures;
 import net.diligentelzee.worldgen.ModPlacedFeatures;
@@ -22,6 +22,6 @@ public class ModDatapackProvider extends DatapackBuiltinEntriesProvider {
             ;
 
     public ModDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, BUILDER, Set.of(CreateFillers.MOD_ID));
+        super(output, registries, BUILDER, Set.of(HOaV.MOD_ID));
     }
 }

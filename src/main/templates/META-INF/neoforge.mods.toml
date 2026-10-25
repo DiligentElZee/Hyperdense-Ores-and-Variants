@@ -42,7 +42,7 @@ logoFile="icon.png" #optional
 credits="GG David and Otto... Thank you to Mar Mar's Enhanced Ore Variety" #optional
 
 # The authors of the mod, displayed in the mod UI (optional)
-authors="DiligentElZee"
+authors="Diligent ElZee"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
@@ -65,7 +65,7 @@ Extends "Mar Mar's Enhanced Ore Variety" mod by also adding 'Hyperdense' version
 [[dependencies.${mod_id}]] #optional
     # the modid of the dependency
     modId="neoforge" #mandatory
-    # The type of the dependency. Can be one of "required", "optional", "incompatible" or "discouraged" (case insensitive).
+    # The type of the dependency. Can be one of "required", "optional", "incompatible" or "discouraged" (case-insensitive).
     # 'required' requires the mod to exist, 'optional' does not
     # 'incompatible' will prevent the game from loading when the mod exists, and 'discouraged' will show a warning
     type="required" #mandatory

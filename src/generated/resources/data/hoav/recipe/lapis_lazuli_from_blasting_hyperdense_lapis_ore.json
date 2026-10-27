@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 125,
+  "experience": 1.2,
+  "group": "lapis",
+  "ingredient": "hoav:hyperdense_lapis_ore",
+  "result": {
+    "count": 1,
+    "id": "minecraft:lapis_lazuli"
+  }
+}

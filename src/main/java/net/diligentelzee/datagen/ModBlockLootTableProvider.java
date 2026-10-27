@@ -1,6 +1,6 @@
 package net.diligentelzee.datagen;
 
-import net.diligentelzee.create_fillers.block.ModBlocks;
+import net.diligentelzee.hoav.block.ModBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;

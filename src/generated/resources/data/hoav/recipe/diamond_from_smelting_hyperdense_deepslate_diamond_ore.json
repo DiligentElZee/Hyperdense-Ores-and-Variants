@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 0.5,
+  "group": "diamond",
+  "ingredient": "hoav:hyperdense_deepslate_diamond_ore",
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond"
+  }
+}

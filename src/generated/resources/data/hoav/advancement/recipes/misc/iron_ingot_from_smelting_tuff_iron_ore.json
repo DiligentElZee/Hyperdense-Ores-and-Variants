@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hoav:iron_ingot_from_smelting_tuff_iron_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_tuff_iron_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hoav:tuff_iron_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tuff_iron_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hoav:iron_ingot_from_smelting_tuff_iron_ore"
+    ]
+  }
+}

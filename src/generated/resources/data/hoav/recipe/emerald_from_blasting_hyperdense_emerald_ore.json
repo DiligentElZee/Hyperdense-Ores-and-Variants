@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 125,
+  "experience": 0.6,
+  "group": "emerald",
+  "ingredient": "hoav:hyperdense_emerald_ore",
+  "result": {
+    "count": 1,
+    "id": "minecraft:emerald"
+  }
+}

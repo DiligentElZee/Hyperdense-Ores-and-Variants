@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 0.5,
+  "group": "coal",
+  "ingredient": "hoav:hyperdense_diorite_coal_ore",
+  "result": {
+    "count": 1,
+    "id": "minecraft:coal"
+  }
+}

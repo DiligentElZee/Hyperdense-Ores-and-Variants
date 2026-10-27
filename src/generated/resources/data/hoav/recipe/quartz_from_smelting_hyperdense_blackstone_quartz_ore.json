@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 0.5,
+  "group": "quartz",
+  "ingredient": "hoav:hyperdense_blackstone_quartz_ore",
+  "result": {
+    "count": 1,
+    "id": "minecraft:quartz"
+  }
+}

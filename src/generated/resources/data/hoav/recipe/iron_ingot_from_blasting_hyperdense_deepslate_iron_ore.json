@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 125,
+  "experience": 0.6,
+  "group": "iron",
+  "ingredient": "hoav:hyperdense_deepslate_iron_ore",
+  "result": {
+    "count": 1,
+    "id": "minecraft:iron_ingot"
+  }
+}

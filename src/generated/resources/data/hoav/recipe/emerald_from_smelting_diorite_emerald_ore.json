@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 120,
+  "experience": 0.5,
+  "group": "emerald",
+  "ingredient": "hoav:diorite_emerald_ore",
+  "result": {
+    "count": 1,
+    "id": "minecraft:emerald"
+  }
+}

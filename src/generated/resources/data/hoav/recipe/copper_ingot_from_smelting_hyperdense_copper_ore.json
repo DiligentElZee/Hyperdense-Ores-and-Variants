@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 0.5,
+  "group": "copper",
+  "ingredient": "hoav:hyperdense_copper_ore",
+  "result": {
+    "count": 1,
+    "id": "minecraft:copper_ingot"
+  }
+}

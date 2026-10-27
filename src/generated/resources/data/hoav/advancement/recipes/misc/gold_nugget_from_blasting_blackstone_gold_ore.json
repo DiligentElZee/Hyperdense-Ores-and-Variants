@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_blackstone_gold_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "hoav:blackstone_gold_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "hoav:gold_nugget_from_blasting_blackstone_gold_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_blackstone_gold_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "hoav:gold_nugget_from_blasting_blackstone_gold_ore"
+    ]
+  }
+}
